@@ -10,10 +10,18 @@
     "type": "git",
     "url": "git://github.com/morishitter/csscs/git"
   },
-  "keywords": ["code style","lint","formatter","linter","validate","css"],
+  "keywords": [
+    "code style",
+    "lint",
+    "formatter",
+    "linter",
+    "validate",
+    "css"
+  ],
   "author": "Masaaki Morishita",
   "license": "MIT",
-  "dependencies": {},
-  "devDependencies": {
-  }
+  "dependencies": {
+    "postcss": "^4.1.16"
+  },
+  "devDependencies": {}
 }
