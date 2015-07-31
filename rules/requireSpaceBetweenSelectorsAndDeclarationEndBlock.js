@@ -5,7 +5,7 @@ module.exports = function () {
     root.eachRule(function (rule) {
       var afterCount = rule.after.length
       if (afterCount !== '\n') {
-        throw new Error('whitespace')
+        console.warn('need new line between last declaration and }')
       }
     })
   }

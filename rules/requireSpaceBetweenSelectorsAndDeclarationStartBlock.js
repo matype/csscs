@@ -5,7 +5,7 @@ module.exports = function () {
     root.eachRule(function (rule) {
       var betweenCount = rule.between.length
       if (betweenCount !== 1) {
-        throw new Error('whitespace')
+        console.warn('need 1 space between selector and {')
       }
     })
   }
