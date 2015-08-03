@@ -3,10 +3,10 @@ var postcss = require('postcss')
 module.exports = function () {
   return function (root) {
     root.eachRule(function (rule) {
-      var betweenCount = rule.between.length
-      if (betweenCount === 0) {
-        console.warn('need space between selector and {')
+      if (rule.before.between('\n') === -1){
+        console.warn('need new line between last declaration and }')
       }
     })
   }
 }
+
